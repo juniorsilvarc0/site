@@ -1,10 +1,14 @@
 export function Header() {
+  // Não precisa mais de "absolute", "top-0", "left-0", "w-full", "z-30"
   return (
-    <header className="absolute top-0 left-0 w-full z-30">
-      <div className="container mx-auto px-6 lg:px-16">
+    <header>
+      {/* Ajustar padding para alinhar com o conteúdo */}
+      <div className="max-w-md mx-auto w-full"> 
         <nav className="flex justify-between items-center py-6">
-          <div className="text-white text-2xl font-bold">HOMESTEAD</div>
-          <div className="hidden md:flex items-center space-x-8 text-white">
+          <div className="text-white text-2xl font-bold">
+            HOMESTEAD
+          </div>
+          <div className="hidden md:flex items-center space-x-8 text-white text-sm">
             <a href="#" className="hover:text-gray-300 transition-colors">Home</a>
             <a href="#" className="hover:text-gray-300 transition-colors">About</a>
             <a href="#" className="hover:text-gray-300 transition-colors">Listings</a>
