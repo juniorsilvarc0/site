@@ -89,8 +89,8 @@ export function Hero() {
                 minHeight: '600px'
               }}
             >
-              {/* Formulário sobre a imagem - alinhado com o texto */}
-              <div className="absolute top-1/2 -translate-y-1/2 right-8">
+              {/* Formulário sobre a imagem */}
+              <div className="absolute top-8 right-8">
                 <SearchForm />
               </div>
               
