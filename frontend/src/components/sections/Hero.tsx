@@ -66,14 +66,14 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
           
           {/* Bloco esquerdo - Texto */}
-          <div className="bg-slate-900 text-white flex items-center justify-center p-8 lg:p-16">
+          <div className="bg-slate-900 text-white flex items-start justify-center pt-16 p-8 lg:p-16">
             <div className="max-w-md">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 Find your<br />
                 dream<br />
                 home
               </h1>
-              <p className="text-lg text-gray-300">
+              <p className="text-lg text-gray-300 mb-16">
                 Discover the perfect place to live 
                 with our curated selection of properties.
               </p>
@@ -89,11 +89,6 @@ export function Hero() {
                 minHeight: '600px'
               }}
             >
-              {/* Formulário sobre a imagem */}
-              <div className="absolute top-8 right-8">
-                <SearchForm />
-              </div>
-              
               {/* Controles de navegação */}
               <div className="absolute bottom-6 right-6 flex gap-2">
                 <button className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors">
@@ -105,6 +100,11 @@ export function Hero() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Formulário posicionado abaixo do texto, no lado esquerdo da página */}
+        <div className="absolute bottom-4 left-8 lg:left-16">
+          <SearchForm />
         </div>
       </section>
     </>
