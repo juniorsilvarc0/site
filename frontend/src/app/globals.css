@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reset global para ocupar toda a tela */
+@layer base {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #__next {
+    height: 100%;
+  }
+}
+
 /* Estilos customizados */
 @layer utilities {
   .line-clamp-1 {
@@ -23,6 +36,12 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+
+  /* Garantir que a hero section ocupe toda a viewport */
+  .hero-full-height {
+    height: 100vh;
+    min-height: 100vh;
   }
 }
 

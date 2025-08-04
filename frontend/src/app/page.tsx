@@ -7,67 +7,65 @@ export default async function HomePage() {
   const featuredProperties = await getFeaturedProperties();
 
   return (
-    <>
-      <main className="overflow-x-hidden">
-        {/* Seção Hero com formulário de busca */}
-        <Hero />
-        
-        {/* Seção de imóveis em destaque */}
-        <FeaturedListings properties={featuredProperties} />
-        
-        {/* Seção adicional - Sobre nós (opcional) */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                  Por que escolher a Homestead?
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  Somos especialistas em conectar pessoas aos seus lares dos sonhos. 
-                  Nossa equipe experiente oferece um serviço personalizado e 
-                  uma seleção cuidadosa de propriedades.
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className="text-gray-700">Atendimento personalizado</span>
+    <div className="min-h-screen">
+      {/* Seção Hero ocupando toda a tela */}
+      <Hero />
+      
+      {/* Seção de imóveis em destaque */}
+      <FeaturedListings properties={featuredProperties} />
+      
+      {/* Seção adicional - Sobre nós (opcional) */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                Por que escolher a Homestead?
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Somos especialistas em conectar pessoas aos seus lares dos sonhos. 
+                Nossa equipe experiente oferece um serviço personalizado e 
+                uma seleção cuidadosa de propriedades.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <div className="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
                   </div>
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className="text-gray-700">Propriedades verificadas</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className="text-gray-700">Suporte completo</span>
-                  </div>
+                  <span className="text-gray-700">Atendimento personalizado</span>
                 </div>
-              </div>
-              <div className="relative">
-                <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
-                  <img 
-                    src="/about-us.jpg" 
-                    alt="Nossa equipe" 
-                    className="w-full h-full object-cover"
-                  />
+                <div className="flex items-center">
+                  <div className="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Propriedades verificadas</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Suporte completo</span>
                 </div>
               </div>
             </div>
+            <div className="relative">
+              <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
+                <img 
+                  src="/about-us.jpg" 
+                  alt="Nossa equipe" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
       
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
@@ -111,6 +109,6 @@ export default async function HomePage() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
