@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: roper-backend
+    restart: unless-stopped
+    env_file:
+      - .env # Arquivo com as chaves secretas
+    ports:
+      - "8000:8000"
+    networks:
+      - roper-net
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        # Em produção, o frontend se comunicará com o backend pelo nome do serviço
+        NEXT_PUBLIC_API_BASE_URL: http://backend:8000/api/v1
+    container_name: roper-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - roper-net
+
+networks:
+  roper-net:
+    driver: bridge

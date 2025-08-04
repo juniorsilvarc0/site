@@ -1,0 +1,6 @@
+# DEVE FICAR ASSIM:
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+supabase
