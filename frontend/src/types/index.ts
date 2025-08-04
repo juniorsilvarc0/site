@@ -7,5 +7,4 @@ export interface Property {
   description?: string;
   bedrooms?: number;
   bathrooms?: number;
-  area_sqm?: number;
 }
