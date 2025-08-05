@@ -39,7 +39,7 @@ function SearchForm() {
         <div className="flex gap-3">
           <input 
             type="text" 
-            placeholder="Search"
+            placeholder="Buscar"
             className="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none" 
           />
           <button className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors duration-300 whitespace-nowrap">
