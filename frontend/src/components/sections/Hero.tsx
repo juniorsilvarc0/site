@@ -2,7 +2,7 @@ import { Header } from '@/components/layout/Header';
 
 function SearchForm() {
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-2xl w-[400px] max-w-[90vw]">
+    <div className="bg-white p-6 rounded-2xl shadow-2xl w-[600px] max-w-[90vw]">
       <div className="space-y-4">
         {/* Property Type */}
         <div>
