@@ -20,7 +20,7 @@ export default async function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Por que escolher a Homestead?
+                Por que escolher a Roper?
               </h2>
               <p className="text-gray-600 mb-6">
                 Somos especialistas em conectar pessoas aos seus lares dos sonhos. 
@@ -72,7 +72,7 @@ export default async function HomePage() {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">HOMESTEAD</h3>
+              <h3 className="text-2xl font-bold mb-4">CONSTRUTORA ROPER</h3>
               <p className="text-gray-400">
                 Encontre seu lar dos sonhos com nossa seleção cuidadosa de propriedades.
               </p>
@@ -98,14 +98,14 @@ export default async function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Contato</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Email: contato@homestead.com</li>
+                <li>Email: contato@construtoraroper.com.br</li>
                 <li>Telefone: (11) 99999-9999</li>
                 <li>WhatsApp: (11) 99999-9999</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Homestead. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Contrutora Roper. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

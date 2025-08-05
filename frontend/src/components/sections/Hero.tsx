@@ -6,7 +6,7 @@ function SearchForm() {
       <div className="space-y-4">
         {/* Property Type */}
         <div>
-          <label className="block text-gray-700 text-sm font-semibold mb-2">Property Type</label>
+          <label className="block text-gray-700 text-sm font-semibold mb-2">Tipo de imóvel</label>
           <select className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-white">
             <option>Casa</option>
             <option>Apartamento</option>
@@ -19,15 +19,15 @@ function SearchForm() {
         <div className="grid grid-cols-2 gap-3">
           <div>
             <select className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-white text-gray-600">
-              <option>Location</option>
-              <option>São Paulo</option>
-              <option>Rio de Janeiro</option>
-              <option>Belo Horizonte</option>
+              <option>Localização</option>
+              <option>Parnaíba</option>
+              <option>Magalhães de Almeida</option>
+              <option>São Bernardo</option>
             </select>
           </div>
           <div>
             <select className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none bg-white text-gray-600">
-              <option>Price Range</option>
+              <option>Faixa de preço</option>
               <option>Até R$ 300.000</option>
               <option>R$ 300.000 - R$ 500.000</option>
               <option>R$ 500.000+</option>
@@ -43,7 +43,7 @@ function SearchForm() {
             className="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none" 
           />
           <button className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors duration-300 whitespace-nowrap">
-            Search
+            Buscar
           </button>
         </div>
       </div>
@@ -69,13 +69,13 @@ export function Hero() {
           <div className="bg-slate-900 text-white flex items-start justify-center pt-16 p-8 lg:p-16">
             <div className="max-w-md">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Find your<br />
-                dream<br />
-                home
+                Temos a chave<br />
+                para o seu<br />
+                sonho
               </h1>
               <p className="text-lg text-gray-300 mb-16">
-                Discover the perfect place to live 
-                with our curated selection of properties.
+                Descubra o lugar perfeito para viver
+                com nossa seleção de imóveis.
               </p>
             </div>
           </div>

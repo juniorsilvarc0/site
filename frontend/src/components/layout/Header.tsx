@@ -1,16 +1,25 @@
+import Image from 'next/image';
+
 export function Header() {
   return (
     <header className="w-full">
       <nav className="flex justify-between items-center">
-        <div className="text-white text-2xl font-bold">
-          HOMESTEAD
+        {/* Logo */}
+        <div>
+          <Image
+            src="/logo-roper.png"
+            alt="Logo da Homestead"
+            width={320} // Ajuste a largura conforme necessário
+            height={89} // Ajuste a altura conforme necessário
+            priority // Ajuda a carregar a imagem principal mais rápido
+          />
         </div>
         
-        <div className="hidden md:flex items-center space-x-8 text-white text-sm">
+        <div className="hidden md:flex items-center space-x-8 text-white text-lg">
           <a href="#" className="hover:text-gray-300 transition-colors">Home</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">About</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">Listings</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">Contact</a>
+          <a href="#" className="hover:text-gray-300 transition-colors">Quem somos nós</a>
+          <a href="#" className="hover:text-gray-300 transition-colors">Imóveis</a>
+          <a href="#" className="hover:text-gray-300 transition-colors">Contato</a>
         </div>
         
         {/* Menu mobile */}
