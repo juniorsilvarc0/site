@@ -54,10 +54,10 @@ export function FeaturedListings({ properties }: { properties: Property[] }) {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Featured Listings
+            Imóveis em Destaque
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore our handpicked selection of featured properties
+            Explore nossa seleção de imóveis em destaque
           </p>
         </div>
         

@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Homestead | Encontre seu Lar",
+  title: "Construtora Roper | Encontre seu Lar",
   description: "Descubra o lugar perfeito para morar com nossa seleção de imóveis.",
 };
 
