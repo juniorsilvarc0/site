@@ -103,7 +103,7 @@ export function Hero() {
         </div>
 
         {/* Formulário posicionado abaixo do texto, no lado esquerdo da página */}
-        <div className="absolute bottom-4 left-8 lg:left-16">
+        <div className="absolute bottom-4 left-[88px] lg:left-[230px]">
           <SearchForm />
         </div>
       </section>
