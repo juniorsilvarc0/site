@@ -8,9 +8,16 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "jcavwlwklgkfcittablk.supabase.co", // Adicione o host do seu Supabase aqui
+        hostname: "jcavwlwklgkfcittablk.supabase.co",
+      },
+      // Permite imagens absolutas servidas pelo próprio frontend (ex.: http://localhost:3000/arquivo.jpg)
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "3000",
       },
     ],
   },
 };
+
 export default nextConfig;
