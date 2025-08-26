@@ -1,17 +1,15 @@
 export interface Property {
-  id: string;
+  id: string; // O backend envia um UUID, que é uma string
   title: string;
-  description: string;
+  description: string | null; // Pode ser nulo
   price: number;
   location: string;
-  bedrooms: number;
-  bathrooms: number;
-  area: number; // em m²
-  type: 'casa' | 'apartamento' | 'terreno' | 'comercial';
+  bedrooms: number | null; // Pode ser nulo
+  bathrooms: number | null; // Pode ser nulo
+  area_sqm: number | null; // Renomeado de 'area' para 'area_sqm'
+  property_type_id: string; // O backend envia o ID do tipo de propriedade
   image_urls: string[];
-  featured: boolean;
-  created_at: string;
-  updated_at: string;
+  is_featured: boolean; // Renomeado de 'featured' para 'is_featured'
 }
 
 export interface SearchFilters {
